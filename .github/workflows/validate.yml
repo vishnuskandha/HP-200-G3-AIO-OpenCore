@@ -23,4 +23,4 @@ jobs:
         run: python3 scripts/validate_efi.py EFI/OC/config.plist
 
       - name: Confirm working tree untouched
-        run: git status --porcelain --exit-code
+        run: test -z "$(git status --porcelain)"
