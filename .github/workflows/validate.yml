@@ -1,0 +1,26 @@
+name: Validate EFI
+
+on:
+  push:
+    paths:
+      - "EFI/**"
+      - "scripts/**"
+  pull_request:
+    paths:
+      - "EFI/**"
+      - "scripts/**"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate config.plist
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run validation
+        run: python3 scripts/validate_efi.py EFI/OC/config.plist
+
+      - name: Confirm working tree untouched
+        run: git status --porcelain --exit-code

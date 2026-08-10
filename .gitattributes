@@ -1,0 +1,21 @@
+# Normalize line endings for text files across platforms
+* text=auto
+
+# Plists, configs and docs: always LF (OpenCore is happy either way, git stays clean)
+*.plist text eol=lf
+*.aml text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.strings text eol=lf
+*.hex text eol=lf
+*.lbl text eol=lf
+*.l2x text eol=lf
+
+# Binaries — never touch
+*.efi binary
+*.kext binary
+*.icns binary
+*.jpg binary
+*.png binary
+*.bin binary

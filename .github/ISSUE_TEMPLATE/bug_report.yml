@@ -1,0 +1,76 @@
+name: Bug report
+description: Something doesn't work with this EFI. Please include the evidence below — logs over guesses.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report. Before you fill this in:
+        - Read [docs/06-troubleshooting.md](https://github.com/vishnuskandha/HP-200-G3-AIO-OpenCore/blob/main/docs/06-troubleshooting.md)
+        - Make sure your SMBIOS is **your own** (docs/07) — never paste serials.
+        - Attach a **verbose boot log** (boot with `-v`) — the last screenful is usually the answer.
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I have my **own generated SMBIOS** (not the repo's)
+          required: true
+        - label: I read the troubleshooting guide first
+          required: false
+  - type: input
+    id: hardware
+    attributes:
+      label: Machine
+      description: Exact model + CPU (e.g. HP 200 G3 AIO, i5-8250U / i3-8130U)
+      placeholder: "HP 200 G3 AIO, i5-8250U"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "Sequoia 15.x (build number helps)"
+    validations:
+      required: true
+  - type: input
+    id: opencore
+    attributes:
+      label: OpenCore version
+      description: Run `opencore-version` from the UEFI shell (add OpenShell.efi to Tools) or use the OpenCore log header.
+      placeholder: "1.0.x"
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: Symptom
+      description: What happens, and at which stage? Be precise — the last verbose line, the exact screen state, the LED behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: |
+        Paste or link (in order of usefulness):
+        1. Verbose boot log (photo of last lines is fine)
+        2. OpenCore log file (Misc > Debug > Target=3 writes one to the EFI volume)
+        3. `ioreg -lw0 | grep -i "model\|board-id"`
+        4. `kextstat | grep -v com.apple`
+        5. Screenshot of System Information (scrub the serial first!)
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: What did you change?
+      description: Every difference from the shipped EFI — kext versions, config edits, boot-args, USB map, BIOS settings.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Check
+      options:
+        - label: I did NOT include real SMBIOS values anywhere in this report
+          required: true

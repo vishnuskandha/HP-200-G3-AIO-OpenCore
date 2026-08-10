@@ -1,0 +1,20 @@
+# macOS noise
+.DS_Store
+._*
+.AppleDouble
+*.backup
+oldConfig.plist
+
+# Windows noise
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+
+# Generated / temporary
+*.log
+tmp/
+*.scrubbed.plist

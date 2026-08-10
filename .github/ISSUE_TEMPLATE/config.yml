@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Engineering write-up (blog)
+    url: https://vishnuskandha.qzz.io/blog/opencore-hackintosh-debugging
+    about: The original debugging story behind this EFI.
+  - name: Dortania OpenCore Install Guide
+    url: https://dortania.github.io/OpenCore-Install-Guide/
+    about: The authoritative reference for OpenCore configuration.
+  - name: Hackintosh subreddit
+    url: https://www.reddit.com/r/hackintosh/
+    about: General community support for non-machine-specific questions.
