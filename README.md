@@ -187,11 +187,13 @@ Full write-up: **[docs/05-debugging-journey.md](docs/05-debugging-journey.md)**
 Found a bug, a better framebuffer value, or a working BCM Wi-Fi swap?
 Open an [issue](https://github.com/vishnuskandha/HP-200-G3-AIO-OpenCore/issues)
 or a pull request — use the issue template so reports include the logs we
-actually need (verbose boot, `ioreg`, EFI snapshot).
+actually need (verbose boot, `ioreg`, EFI snapshot). See
+[CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 
 - **Please**: regenerate SMBIOS before sharing screenshots or your config.
 - **Please**: attach OpenCore `verbose` log + `opencore-version` output.
 - **Never**: commit real serial numbers. CI warns about this.
+- **Security**: report vulnerabilities privately — see [SECURITY.md](SECURITY.md).
 
 ## 🙏 Credits
 
