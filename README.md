@@ -2,6 +2,15 @@
   <img src="screenshots/opencore-01.jpg" alt="macOS Sequoia running on the HP 200 G3 All-in-One" width="720"/>
 </p>
 
+<!-- README polish: repository metadata badges -->
+<p>
+  <a href="https://github.com/vishnuskandha/HP-200-G3-AIO-OpenCore"><img alt="GitHub stars" src="https://img.shields.io/github/stars/vishnuskandha/HP-200-G3-AIO-OpenCore?style=for-the-badge&logo=github&label=Stars"></a>
+  <a href="https://github.com/vishnuskandha/HP-200-G3-AIO-OpenCore/fork"><img alt="GitHub forks" src="https://img.shields.io/github/forks/vishnuskandha/HP-200-G3-AIO-OpenCore?style=for-the-badge&logo=github&label=Forks"></a>
+  <a href="https://github.com/vishnuskandha/HP-200-G3-AIO-OpenCore/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/vishnuskandha/HP-200-G3-AIO-OpenCore?style=for-the-badge&logo=github&label=Issues"></a>
+  <a href="https://github.com/vishnuskandha/HP-200-G3-AIO-OpenCore/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/vishnuskandha/HP-200-G3-AIO-OpenCore?style=for-the-badge&logo=git&label=Updated"></a>
+</p>
+<!-- End README polish -->
+
 <h1 align="center">HP 200 G3 All-in-One · OpenCore Hackintosh</h1>
 
 <p align="center">
